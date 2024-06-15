@@ -23,6 +23,7 @@ function App() {
         <Route path='/deposit' element={<Deposit/>}></Route>
         <Route path='/complate/task' element={<CompleteTask/>}></Route>
         <Route path='/withdraw' element={<Withdraw/>}></Route>
+        <Route path='*' element={<Dashbord/>}></Route>
       </Routes>
     </Router>
   )

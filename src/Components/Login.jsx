@@ -44,7 +44,7 @@ function Login() {
             <div className='bg-transparent max-w-[450px] responsive w-[90%] mx-auto flex flex-col input-boxs px-2 py-[2rem] rounded-sm bg-slate-800 shadow-ring text-white'>
             <label htmlFor="email" className='flex flex-col relative'>
               {empty === 400? <span className='text-sm absolute text-red-500 left-4 -top-3 bg-slate-800'>{emptyMessage}</span> : ""}
-                <input className={`input-box my-3 ${empty ===400? "ring-red-400" :""}`} type="text" onChange={(e)=> setEmail(e.target.value)} placeholder='Enter your username'/>
+                <input className={`input-box my-3 ${empty ===400? "ring-red-400" :""}`} type="text" onChange={(e)=> setEmail(e.target.value)} placeholder='Enter your Email'/>
             </label>
             <label htmlFor="email" className='flex flex-col relative'>
               {empty === 401? <span className='text-sm absolute text-red-500 left-4 -top-3 bg-slate-800'>{emptyMessage}</span> : ""}

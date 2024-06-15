@@ -118,7 +118,7 @@ function Register() {
                 {Passwordempty? <span className='absolute left-3 -top-1 text-[0.8rem] bg-slate-800 text-red-500'>Empty</span> :""}
                 <input className={`input-box w-full mx-0 ${Passwordempty ? "ring-red-500" :""}`} onChange={(e)=> setPassword(e.target.value)} type="text" placeholder='Enter your password'/>
                 </div>
-                <button onClick={handleRegister} className='btn my-3'>Register</button>
+                <button onClick={handleRegister} className='btn my-3 px-4'>Register</button>
                 <p className='text-center capitalize'>
                   <span>you have alredy account</span>
                 <Link to="/login" className='text-right underline text-cyan-300 ml-2'>Login</Link>
