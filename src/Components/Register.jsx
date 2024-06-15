@@ -17,7 +17,6 @@ function Register() {
         }).then(()=>{
           navigate("/dashboard")
         }).catch((err)=>{
-          navigate("/login")
         })
         }, [])
 
