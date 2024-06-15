@@ -38,6 +38,9 @@ function Withdraw() {
             axios.post("https://real-revenue-backend.onrender.com/withdraw",{
                 userid: userid,
                 income:income,
+                email:email,
+                username,
+                number,
                 withdraw: 1000
             }).then(()=>{
                 setwithdrewComplete(true)
