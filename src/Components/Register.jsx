@@ -9,6 +9,7 @@ function Register() {
 
   const navigate = useNavigate()
     useEffect(()=>{
+      document.title ="Register | REAL REVENUE"
         const token = localStorage.getItem("token");
         axios.get("http://localhost:3000/profile",{
             headers:{

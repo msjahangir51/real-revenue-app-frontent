@@ -41,6 +41,7 @@ function Deposit() {
 
 
   useEffect(()=>{
+      document.title ="Deposit | REAL REVENUE"
         const token = localStorage.getItem("token");
         axios.get("https://real-revenue-backend.onrender.com/profile",{
             headers:{

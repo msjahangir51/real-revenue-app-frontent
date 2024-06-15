@@ -44,6 +44,7 @@ function CompleteTask() {
     const {deposit,income,task,userid,withdraw} =Income;
 
     useEffect(()=>{
+        document.title ="Complete Task | REAL REVENUE"
             const token = localStorage.getItem("token");
             axios.get("https://real-revenue-backend.onrender.com/profile",{
                 headers:{

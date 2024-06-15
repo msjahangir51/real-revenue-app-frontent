@@ -14,6 +14,7 @@ function Dashbord() {
     const [income,setIncome] = useState("") 
     const navigate = useNavigate()
     useEffect(()=>{
+      document.title ="Dashbord | REAL REVENUE"
         const token = localStorage.getItem("token");
         axios.get("https://real-revenue-backend.onrender.com/profile",{
             headers:{

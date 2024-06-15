@@ -11,6 +11,7 @@ import axios from 'axios'
 function HomeUnauth() {
   const navigate = useNavigate()
     useEffect(()=>{
+      document.title ="Home | REAL REVENUE"
         const token = localStorage.getItem("token");
         axios.get("https://real-revenue-backend.onrender.com/profile",{
             headers:{

@@ -12,6 +12,7 @@ function Login() {
     const [emptyMessage,setEmptyMessage] = useState("")
     const [password,setPassword] = useState("")
     useEffect(()=>{
+        document.title ="Login | REAL REVENUE"
         const token = localStorage.getItem("token");
         axios.get("https://real-revenue-backend.onrender.com/profile",{
             headers:{
